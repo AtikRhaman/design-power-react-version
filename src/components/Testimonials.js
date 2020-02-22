@@ -1,6 +1,7 @@
 import React from "react";
 import SpeechBubble from "./SpeechBubble";
 import SudoTextBlock from "./SudoTextBlock";
+import SectionTitle from "./SectionTitle";
 
 const Testimonials = () => {
   return (
@@ -8,33 +9,48 @@ const Testimonials = () => {
       <div className="container">
         <div className="testimonial-main-container">
           <div className="testimonial-container">
-            <div className="section-border">
-              <h1 className="section-border__heading">Testimonials</h1>
-            </div>
-
+            <SectionTitle content={"Testimonials"} />
             <div className="testimonials">
               <div className="testimonials__item">
-                <SudoTextBlock />
+                <SudoTextBlock
+                  title={"Block Title"}
+                  content={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacus ornare, ultricies tortor pharetra, fringilla est. Aliquam facilisis mattis diam nec faucibus."
+                  }
+                />
               </div>
 
               <div className="testimonials__item">
-                <SudoTextBlock />
+                <SudoTextBlock
+                  title={"Block Title"}
+                  content={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacus ornare, ultricies tortor pharetra, fringilla est. Aliquam facilisis mattis diam nec faucibus."
+                  }
+                />
               </div>
 
               <div className="testimonials__item">
-                <SudoTextBlock />
+                <SudoTextBlock
+                  title={"Block Title"}
+                  content={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacus ornare, ultricies tortor pharetra, fringilla est. Aliquam facilisis mattis diam nec faucibus."
+                  }
+                />
               </div>
 
               <div className="testimonials__item">
-                <SudoTextBlock />
+                <SudoTextBlock
+                  title={"Block Title"}
+                  content={
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacus ornare, ultricies tortor pharetra, fringilla est. Aliquam facilisis mattis diam nec faucibus."
+                  }
+                />
               </div>
             </div>
           </div>
 
           <div className="development-container">
-            <div className="section-border">
-              <h1 className="section-border__heading">Development</h1>
-            </div>
+            <SectionTitle content={"Development"} />
 
             <div className="development">
               <div className="development__item">
@@ -91,8 +107,8 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+        <SpeechBubble />
       </div>
-      <SpeechBubble />
     </section>
   );
 };

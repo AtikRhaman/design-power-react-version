@@ -1,9 +1,9 @@
 import React from "react";
 import HeaderImg from "../images/Header-img.png";
 import SpeechBubble from "./SpeechBubble";
+import Button from "./Button";
 
 const Header = props => {
-  const { title, subtitle, author } = props;
   return (
     <header className="header">
       <div className="container">
@@ -13,25 +13,21 @@ const Header = props => {
           </div>
           <div className="header-content__info">
             <h1 className="header-content__info--italic">
-              {"POWERFULLY SIMPLE"}
-              <span className="header-content__info--regular">{"WITH A"}</span>
-              {"SQUEEKY CLEAN"}
-              <span className="header-content__info--regular">{"DESIGN"}</span>
+              POWERFULLY SIMPLE
+              <span className="header-content__info--regular"> WITH A</span>
+              <br />
+              SQUEEKY CLEAN
+              <span className="header-content__info--regular"> DESIGN </span>
             </h1>
             <p className="header-content__info--regular">
-              {
-                "Find out how you can offer quick and powerful solutions to your customers now!"
-              }
+              Find out how you can offer quick and powerful solutions to your
+              customers now!
             </p>
-            <button className="btn"> {"Learn more"} </button>
+            <Button content={"Lern More"} />
           </div>
         </div>
         <SpeechBubble />
       </div>
-      <h1> {title} </h1> <h2> {subtitle} </h2>
-      <h2>
-        {author.firstName} {author.lastName}
-      </h2>
     </header>
   );
 };

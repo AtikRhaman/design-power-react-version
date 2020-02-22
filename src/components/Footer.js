@@ -1,4 +1,8 @@
 import React from "react";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faRecycle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = props => {
   //   const { copyRight } = props;
@@ -86,28 +90,27 @@ const Footer = props => {
                 <ul>
                   <li>
                     <a href="/#">
-                      {" "}
-                      <i className="fab fa-twitter"></i>
+                      <FontAwesomeIcon icon={faDesktop} />
                     </a>
                   </li>
                   <li>
                     <a href="/#">
-                      <i className="fab fa-facebook-f"></i>
+                      <FontAwesomeIcon icon={faDesktop} />
                     </a>
                   </li>
                   <li>
                     <a href="/#">
-                      <i className="fab fa-vimeo-v"></i>
+                      <FontAwesomeIcon icon={faLaptopCode} />
                     </a>
                   </li>
                   <li>
                     <a href="/#">
-                      <i className="fab fa-instagram"></i>
+                      <FontAwesomeIcon icon={faRecycle} />
                     </a>
                   </li>
                   <li>
                     <a href="/#">
-                      <i className="fab fa-pinterest"></i>
+                      <FontAwesomeIcon icon={faDesktop} />
                     </a>
                   </li>
                 </ul>

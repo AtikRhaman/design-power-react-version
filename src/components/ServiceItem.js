@@ -1,21 +1,17 @@
 import React from "react";
+import Button from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ServiceItem = () => {
+const ServiceItem = props => {
   return (
     <div className="service__item">
       <div className="icon-container">
-        <i className="fas fa-mobile-alt"></i>
+        <FontAwesomeIcon icon={props.icon} />
       </div>
-      <h3 className="sub-heading">
-        <span>Supperbly</span> responsive
-      </h3>
-      <div className="regular-text--center">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate at
-        explicabo illum! Ullam quam, at ab aperiam blanditiis nihil eum! Soluta
-        explicabo ullam cum maxime laboriosam cumque officiis officia facilis?
-      </div>
-      <div className="btn">Read More</div>
+      <h3 className="sub-heading">{props.subHeading}</h3>
+      <div className="regular-text--center">{props.content}</div>
+      <Button content={"Read More"} />
     </div>
   );
 };
-export default ServiceItem
+export default ServiceItem;
